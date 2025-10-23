@@ -45,7 +45,7 @@ nav a:hover {
 }
 
 nav a.router-link-active {
-  background-color: #ff2600;
+  background-color: #ffffff56;
   height: 30px;
   padding-top: 2px;
 }

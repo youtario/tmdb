@@ -12,26 +12,32 @@ body {
     Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
-  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #e0e0e0;
+  margin: 0;
+  padding: 0;
 }
 
-/* Scrollbar personalizada */
+#app {
+  min-height: 100vh;
+  background: transparent;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #1a1a2e;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ff2600;
+  background: #000000;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ff3d1f;
+  background: #ffffff;
 }
 
 /* Animações suaves */

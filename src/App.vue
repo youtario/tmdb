@@ -12,13 +12,13 @@
 <style scoped>
 .app-wrapper {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
 }
 
 header {
   height: 3rem;
   display: flex;
-  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
   color: #fff;
   font-size: 1.2rem;
   justify-content: center;
@@ -44,13 +44,14 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #1a1a2e;
+  background-color: #2a2a2a;
   height: 30px;
   padding-top: 0.5px;
 }
 
 nav a.router-link-active {
-  background: linear-gradient(135deg, #e94560 0%, #ff6b88 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  color: #000;
   height: 30px;
   padding-top: 2px;
   font-weight: 600;

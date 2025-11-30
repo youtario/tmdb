@@ -88,6 +88,10 @@ watch([selectedGenre, sortBy], () => {
 
 <template>
   <div class="app-container">
+    <nav class="main-nav">
+      <router-link to="/descoberta">Descoberta</router-link>
+    </nav>
+
     <header class="header">
       <div class="header-content">
         <div class="logo">
@@ -231,6 +235,39 @@ watch([selectedGenre, sortBy], () => {
   min-height: 100vh;
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
   color: #e0e0e0;
+}
+
+.main-nav {
+  height: 3rem;
+  display: flex;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+  color: #fff;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  column-gap: 2rem;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  background-color: #2a2a2a;
+}
+
+.main-nav a.router-link-active {
+  background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+  color: #000;
+  font-weight: 600;
 }
 
 .header {

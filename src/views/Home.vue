@@ -88,7 +88,6 @@ watch([selectedGenre, sortBy], () => {
 
 <template>
   <div class="app-container">
-    <!-- Header -->
     <header class="header">
       <div class="header-content">
         <div class="logo">
@@ -114,7 +113,6 @@ watch([selectedGenre, sortBy], () => {
       </div>
     </header>
 
-    <!-- Filters -->
     <div class="filters-section">
       <div class="filter-group">
         <span class="filter-icon">⚙️</span>
@@ -128,7 +126,6 @@ watch([selectedGenre, sortBy], () => {
       </div>
     </div>
 
-    <!-- Genre Pills -->
     <div class="genres-container">
       <button
         @click="selectGenre(null)"
@@ -148,10 +145,8 @@ watch([selectedGenre, sortBy], () => {
       </button>
     </div>
 
-    <!-- Loading -->
     <loading v-model:active="isLoading" is-full-page />
 
-    <!-- Movies Grid -->
     <div v-if="!isLoading" class="movies-grid">
       <div
         v-for="movie in filteredMovies"
@@ -191,7 +186,6 @@ watch([selectedGenre, sortBy], () => {
       </div>
     </div>
 
-    <!-- Movie Details Modal -->
     <div v-if="selectedMovie" class="modal" @click="closeModal">
       <div class="modal-content" @click.stop>
         <button class="close-button" @click="closeModal">✕</button>

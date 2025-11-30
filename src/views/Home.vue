@@ -91,18 +91,13 @@ watch([selectedGenre, sortBy], () => {
     <header class="header">
       <div class="header-content">
         <div class="logo">
-          <img
-            src="https://i.postimg.cc/MGvgnQjX/logo-na-medida.png"
-            alt="Na Medida - Viva o Mediano"
-            class="logo-image"
-          />
           <div>
-            <h1 class="logo-title">Filmes Medianos</h1>
-            <p class="logo-subtitle">A beleza do meio-termo (5-7 ⭐)</p>
+            <h1 class="logo-title">Na Medida</h1>
+            <p class="logo-subtitle">A beleza do meio-termo (5-7)</p>
           </div>
         </div>
         <div class="search-box">
-          <span class="search-icon">🔍</span>
+          <span class="search-icon"></span>
           <input
             type="text"
             placeholder="Buscar filmes..."
@@ -266,13 +261,6 @@ watch([selectedGenre, sortBy], () => {
 .logo-icon {
   font-size: 2.5rem;
   filter: drop-shadow(0 0 10px rgba(233, 69, 96, 0.5));
-}
-
-.logo-image {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 10px rgba(233, 69, 96, 0.3));
 }
 
 .logo-title {
